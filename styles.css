@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: sans-serif;
+}
+.hidden {
+	display: none;
+}
+/*  */
+html {
+	color-scheme: dark;
+}
+body {
+	background-color: #121212;
+	color: #efefef;
+	min-height: 100dvh;
+}
+h1,
+h2 {
+	text-align: center;
+}
+h1 {
+	font-size: 4.5rem;
+}
+h2 {
+	font-size: 3rem;
+}
+.variant-name {
+	visibility: hidden;
+}
+.scoreboard {
+	display: flex;
+	justify-content: space-evenly;
+	font-size: 8rem;
+}
+.player-score {
+	color: rgb(108, 173, 223);
+}
+.comp-score {
+	color: rgb(255, 97, 70);
+}
+.result-message {
+	text-align: center;
+	font-size: 5rem;
+}
+.result-message.win {
+	color: rgb(69, 226, 108);
+}
+.result-message.lose {
+	color: rgb(232, 55, 55);
+}
+.game-board {
+	display: flex;
+	justify-content: space-evenly;
+	font-size: 6rem;
+}
+.choice-cont {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	place-items: center;
+}
+.choice {
+	width: fit-content;
+	font-size: 3.5rem;
+	line-height: 1;
+	padding: 0.3em;
+	border-radius: 0.5rem;
+}
