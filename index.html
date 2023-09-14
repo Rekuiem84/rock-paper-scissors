@@ -18,16 +18,29 @@
         <p class="player-score">0</p>
         <p class="comp-score">0</p>
       </div>
-      <p class="result-message win">You win !</p>
+      <p class="result-message win">Let's play!</p>
       <div class="game-board">
-        <p class="player-choice">Rock</p>
-        <p class="comp-choice">Paper</p>
+        <p class="player-choice">You</p>
+        <p class="comp-choice">Comp</p>
       </div>
-      <div class="choice-cont">
-        <button class="choice" value="rock">Rock</button>
-        <button class="choice" value="paper">Paper</button>
-        <button class="choice" value="scissors">Scissors</button>
+      <div>
+        <div class="choice-cont">
+          <button class="choice rock" value="rock">Rock</button>
+          <button class="choice paper" value="paper">Paper</button>
+          <button class="choice scissors" value="scissors">Scissors</button>
+        </div>
+        <div class="choice-cont ls-variant">
+          <button class="choice lizard" value="lizard">Lizard</button>
+          <button class="choice spock" value="spock">Spock</button>
+        </div>
       </div>
+      <form method="get">
+        <div>
+          <label for="ls">Toggle Lizard-Spock variant</label>
+          <input type="checkbox" name="ls" class="toggle-variant">
+        </div>
+        <button class="reset">Reset score</button>
+      </form>
     </section>
   </main>
 </body>
